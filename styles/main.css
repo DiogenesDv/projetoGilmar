@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main_color: #E5E5E5;
+    --main-text-color: darkblue;
+}
+
+body {
+    width: 100vw;
+    overflow: hidden;
+    background-color: var(--main_color);
+    color: var(--main-text-color);
+}
+
+.header_class {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding: 30px;
+    background: rgb(178, 178, 200);
+    box-shadow: 0px 0px 10px black;
+}
+
+.header_class h1 {
+    font-size: 3rem;
+}
+
+.header_class h1,
+img {
+    text-shadow: -1px -1px 2px black;
+}
+
+.main-container {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 80px 50px 10%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.446);
+    border-radius: 10px;
+}
+
+.areaTexto {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    background-color: white;
+    outline: 0;
+    padding: 8px;
+}
+
+.text_input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text_input h2 {
+    font-size: 1.2rem;
+}
+
+.text_input :focus {
+    box-shadow: 0px 0px 10px rgb(147, 147, 206);
+    ;
+}
+
+#text-area-input {
+    margin: 3% 6%;
+    width: 90%;
+    height: 60%;
+    border: none;
+
+    text-transform: lowercase;
+}
+
+.action-button {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 12px;
+}
+
+.action-button-btn {
+    border: none;
+    padding: 15px;
+    margin-left: 8px;
+    background: dodgerblue;
+    box-shadow: 0px 0px 10px black;
+}
+
+.action-button-btn1 {
+    background: rgb(93, 228, 199);
+}
+
+.action-button-btn2 {
+    background: rgb(228, 113, 93);
+}
+
+.action-button-btn:hover {
+    box-shadow: 0px 0px 10px black;
+    transition: 0.5s;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #ffffff;
+    text-shadow: 0px 0px 8px black;
+}
+
+
+.exit_messages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 30px;
+    padding: 3%;
+    border-radius: 32px;
+    border: 100px solid gray;
+}
+
+.exit_messages3 {
+    width: 200px;
+    border: none;
+    height: 50vh;
+    text-transform: lowercase;
+}
+
+.picture_src-output {
+    width: 304px 336px;
+    margin-top: 5%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding: 20px;
+    background: rgb(188, 188, 199);
+    box-shadow: 0px 0px 10px black;
+    
+}
+
+@media(max-width:768px) {
+
+    .main-container {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .exit_messages3 {
+        height: 30vh;
+        width: 80px;
+    }
+    .text_input{
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Secret Message</title>
+</head>
+<body>
+
+    <header class="header_class">
+        <img src="./assets/logo_alura.svg" alt="logo_alura">
+        <h1>Secret Message</h1>
+    </header>
+
+    <main class="main-container">
+
+        <section class="text_input">
+
+            <h2>Digite seu texto para Criptografar ou Descriptografar</h2>
+            <textarea class="areaTexto" type="text" id="text-area-input" placeholder="Digite seu texto aqui"></textarea>
+            <h4>Obs: Apenas letras minusculas e sem acento</h4>
+            <div class="action-button">
+                <button onclick="cript()" class="action-button-btn action-button-btn1">Criptografar</button>
+                <button onclick="descript()" class="action-button-btn action-button-btn2">Descriptografar</button>
+                <button onclick="colar()" class="action-button-btn">Colar</button>    
+            </div>
+
+        </section>
+
+        <section id="exit_messages2" class="areaTexto" class="exit_messages" class="exit_messages3">
+            
+            <h2>Sua mensagem aparecerá aqui!!!</h2>      
+            <img class="picture_src-output" src="./assets/picture_src.svg" alt="picture_src">
+            
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; Desenvolvido por Gilmar Freire</p>
+    </footer>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
